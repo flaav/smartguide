@@ -1,0 +1,18 @@
+<ion-view view-title="Attractions in Timisoara">
+  <ion-content ng-controller="AttractionsCtrl" >
+  <h1>Attractions in Timisoara</h1>
+		
+  
+ 	<ion-list>
+ 			<ion-item ng-repeat="attraction in attractions" href="#/app/tm/attractions/{{attraction.id}}">
+ 				{{attraction.name}}
+ 			</ion-item>
+	</ion-list>
+
+	
+
+  </ion-content>
+</ion-view>
+
+
+

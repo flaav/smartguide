@@ -1,0 +1,13 @@
+<ion-view view-title="{{attraction.name}}">
+  <ion-content ng-controller="AttractionNameCtrl" >
+  <h1> {{attraction.name}} in Timisoara</h1>
+		
+ 	<h1>LAAMAMMAMA</h1>
+ 				<ion-list>
+						<ion-item  ng-repeat="subcategory in attraction.subCat" type="item-text-wrap" >
+							{{subcategory.subName}}
+						</ion-item>
+				</ion-list>
+
+  </ion-content>
+</ion-view>
